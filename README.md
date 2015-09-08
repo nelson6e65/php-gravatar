@@ -1,2 +1,2 @@
-# gravatar
-A PHP Gravatar image requesterer class
+# PHP: Gravatar Library
+A PHP classes to request Gravatar images
