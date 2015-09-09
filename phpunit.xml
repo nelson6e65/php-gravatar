@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="autoload.php" checkForUnintentionallyCoveredCode="true" verbose="true">
+  <testsuites>
+    <testsuite name="PHP: Nelson Martell Gravatar Library Tests Suite">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <blacklist>
+      <directory suffix=".php">./tests</directory>
+    </blacklist>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
+
+  <logging>
+    <log type="coverage-html" target="build/report/code_coverage" lowUpperBound="35" highLowerBound="70"/>
+    <!-- <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/> -->
+  </logging>
+</phpunit>
