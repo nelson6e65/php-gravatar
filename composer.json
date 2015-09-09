@@ -1,0 +1,51 @@
+{
+	"name": "nelson6e65/php-gravatar",
+	"description": "PHP: Gravatar Library",
+	"type": "library",
+	"keywords": ["gravatar", "framework", "avatar"],
+	"homepage": "http://nelson6e65.github.io/php-gravatar",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nelson Martell",
+			"email": "nelson6e65-dev@yahoo.es",
+			"homepage": "http://nelson6e65.github.io",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/nelson6e65/php-gravatar/issues",
+		"gitter": "https://gitter.im/nelson6e65/php-gravatar",
+		"source": "https://github.com/nelson6e65/php-gravatar",
+		"wiki": "https://github.com/nelson6e65/php-gravatar/wiki",
+		"docs": "http://nelson6e65.github.io/php-gravatar/api"
+	},
+	"require": {
+		"php": ">=4.0.4",
+		"nelson6e65/php_nml": "^0.5"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "*",
+		"apigen/apigen": "^4.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"NelsonMartell\\Gravatar": "src"
+		},
+		"files": [
+			"src/constants.php",
+			"src/functions.php",
+			"config/bootstrap.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"NelsonMartell\\Gravatar\\Test\\": "tests"
+		}
+	},
+	"extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
